@@ -6,10 +6,10 @@ console.log(fxrand()) // deterministic PRNG function, use it instead of Math.ran
 const seed = ~~(fxrand()*123456789);
 let s;
 
-const numCircles = ~~(fxrand()*500) + 100;
+const numCircles = ~~(fxrand()*500) + 10000;
 
 window.$fxhashFeatures = {
-  "Density": numCircles > 500?"High":(numCircles<200?"Low":"Medium")
+  "Density": numCircles > 500?"High":(numCircles<2000?"Low":"Medium")
 }
 
 // note about the fxrand() function 
